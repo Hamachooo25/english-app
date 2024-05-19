@@ -53,6 +53,7 @@ function SignUp() {
   <>
     <div className='auth'>
       <div className='auth-form'>
+        <h1>Sign Up</h1>
         <div className="register">
         <div className="withEmail">
           <form onSubmit={onSubmit}>
@@ -81,7 +82,7 @@ function SignUp() {
               onChange={onChange}
             />
             <button className='submit-btn' type="submit" disabled={loading}>
-              {loading ? 'ログイン中...' : 'アカウント登録'}
+              {loading ? 'Signing up ...' : 'Create Account'}
             </button>
           </form>
         </div>
@@ -89,12 +90,15 @@ function SignUp() {
           <h3>or</h3>
           <button className="googleBtn" onClick={signInWithGoogle} disabled={loading}>
             <img className="google_logo" src={Google} alt="#" />
-            <p>{loading ? "ログイン中..." : "Googleでログイン"}</p>
+            <p>{loading ? "Signing up ..." : "Sign Up with Google"}</p>
           </button>
         </div>
         </div>
-        <Link to ="/">
-          <p className='backToLanding'>ホームページに戻る</p>
+        <Link to ="/login" className='backToLanding'>
+          <p >Already have an account?</p>
+        </Link>
+        <Link to ="/" className='backToLanding'>
+          <p >Back to Home</p>
         </Link>
       </div>
     </div>

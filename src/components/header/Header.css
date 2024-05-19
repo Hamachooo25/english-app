@@ -14,19 +14,17 @@
 }
 
 .logo{
+  text-decoration: none;
+}
+
+.logo h1{
   display:flex;
   flex-direction:row; 
   align-content: center;
+  text-decoration: none;
+  color: #000000; 
 }
 
-.logo img{
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  padding-top: 10px;
-  width:100px;
-  height:auto;
-}
 
 .nav{
   padding-left: 20px;
@@ -47,7 +45,6 @@
   color:white;
   margin-left: 8px;
   border:none;
-  border-radius: 10%;
 }
 
 .header-start{
@@ -56,7 +53,6 @@
 .loginbtn{
   color:white;
   background-color:rgb(65, 176, 235);
-  border-radius: 30px;
 }
 
 
@@ -83,6 +79,10 @@
   border-radius: 4px;
   text-align: center;
 }
+.accountInfo{
+  text-decoration: none;
+  color: #000000; 
+}
 
 li{
   padding: 10px;
@@ -98,11 +98,6 @@ li{
 @media screen and (max-width: 768px) {
   .header{
     padding-left: 10px;
-  }
-  .logo img{
-    padding-top: 10px;
-    width:65px;
-    height:auto;
   }
   .nav{
     padding-left: 10px;

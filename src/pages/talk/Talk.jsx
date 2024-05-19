@@ -160,15 +160,14 @@ const Talk = () => {
                   <h4>Reset</h4>
                 </button>
             </div>
-            <Link to="/">
+            <Link to="/" className='underline'>
             <p className='backHome'>Back</p>
             </Link>
           </div>
           <div className="mic">
             <div className={`mic-icon ${isMicClicked ? 'mic-button-clicked' : ''}`}>
-              <button className="mic-button" onClick={toggleMicButton}>
-                <FaMicrophone className="mic-text" />
-              </button>
+            <button className="use-mic" onClick={toggleMicButton}><FaMicrophone className="mic-icon" />
+            </button>
             </div>
           </div>
           <div className="next">

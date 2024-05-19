@@ -21,11 +21,10 @@ function Header() {
 
   return (
     <header className="header">
-        <div className="logo">
-          <Link to="/"> 
-            <h1>Logo</h1>
+        <div>
+          <Link to="/" className="logo"> 
+            <h1>TalkReady</h1>
           </Link>
-
         </div>
 
 
@@ -43,7 +42,7 @@ function Header() {
           />
           {isOpen && (
             <ul className="menu">
-              <Link to={`/profile`}>
+              <Link to={`/profile`} className='accountInfo'>
                 <li>アカウント情報</li>
               </Link>
               <li onClick={handleSignOut}>ログアウト</li>

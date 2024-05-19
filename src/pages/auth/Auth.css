@@ -1,7 +1,7 @@
 .auth{
   background-color: rgb(233, 213, 255);
+  height: 100vh;
 }
-
 
 .auth-form{
   width: auto;
@@ -26,15 +26,7 @@
   margin-top: 15px;
 }
 
-.talkready-logo{
-  width:250px;
-  margin:10px;
-}
 
-.backToLanding{
-  margin-top: 30px;
-  padding-bottom: 50px;
-}
 
 .register {
   background-color: white;
@@ -51,7 +43,7 @@
 
 .withEmail,
 .withGoogle {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 85%; 
 }
 
@@ -78,8 +70,9 @@ button:disabled {
 }
 
 .submit-btn {
-  margin-top: 15px;
+  margin-top: 10px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .withGoogle{
@@ -90,13 +83,17 @@ button:disabled {
 }
 
 .withGoogle button {
+  font-size: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 20px;
-  background-color: #4bdbff;
+  margin-top: 5px;
+  background-color: #fff;
+  color:black;
+  border-radius: 10px;
+  border:1px solid #dddddd;
 }
 
 .google_logo {
@@ -107,4 +104,9 @@ button:disabled {
 
 .withGoogle p {
   margin: 0;
+}
+
+.backToLanding{
+  text-decoration: none;
+  color: #000000; 
 }

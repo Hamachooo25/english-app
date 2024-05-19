@@ -40,7 +40,7 @@ export default function Profile() {
       <p>You are not logged in</p>
       )}
     </div>
-      <Link to="/">
+      <Link to="/" className='underline'>
          <p className='backbtn'>Back</p>
       </Link>
   </>

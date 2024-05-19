@@ -52,6 +52,7 @@ function Login() {
   <>
     <div className='auth'>
       <div className='auth-form'>
+        <h1>Login</h1>
         <div className="register">
         <div className="withEmail">
           <form onSubmit={onSubmit}>
@@ -72,7 +73,7 @@ function Login() {
               onChange={onChange}
             />
             <button className="submit-btn" type="submit" disabled={loading}>
-              {loading ? "ログイン中..." : "ログイン"}
+              {loading ? "Loging in ..." : "Login"}
             </button>
           </form>
         </div>
@@ -80,12 +81,15 @@ function Login() {
           <h3>or</h3>
           <button className="googleBtn" onClick={signInWithGoogle} disabled={loading}>
             <img className="google_logo" src={Google} alt="#" />
-            <p>{loading ? "ログイン中..." : "Googleでログイン"}</p>
+            <p>{loading ? "Loging in ..." : "Login with Google"}</p>
           </button>
         </div>
         </div>
-        <Link to ="/">
-          <p className='backToLanding'>ホームページに戻る</p>
+        <Link to ="/signup"  className='backToLanding'>
+          <p>Don't have account?</p>
+        </Link>
+        <Link to ="/" className='backToLanding'>
+          <p>Back to home</p>
         </Link>
       </div>
     </div>

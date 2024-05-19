@@ -1,36 +1,30 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
 import Card from '../../components/cards/Card'
 import Header from '../../components/header/Header'
-import { useNavigate } from 'react-router-dom';
+import About from '../../components/about/About'
 import './Home.css'
 
 const Home = () => {
-  const navigate = useNavigate();
-  const handleCardClick = () => {
-    navigate(`/talk`);
-  };
   const cardsData = [
-    { id: 1, title: 'Practice English', description: 'The answer you speak will be converted as text. You can also correct and enter the answers by typing. ', btn: 'START' }
+    { id: 1, title: 'TalkReady', description: 'The answer you speak will be converted as text. You can also correct and enter the answers by typing.', btn: 'START', link: "/talk" }
   ];
 
   return (
     <div>
       <Header/>
       <div className='main'>
-      <div className='main-container'>
-          <div className="main">
+          <div className="main-container">
             {cardsData.map((card, index) => (
               <Card
                 key={index}
                 title={card.title}
                 description={card.description}
                 btn={card.btn}
-                onClick={() => handleCardClick(card.id)} 
+                link = {card.link}
               />
             ))}
-          </div>
         </div>
+        <About/>
       </div>
 
     </div>
